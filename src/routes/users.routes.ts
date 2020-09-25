@@ -15,6 +15,8 @@ usersRouter.post('/', async(request, response) => {
       email,
       password,
     })
+
+    user.password = ""
     
     return response.json(user)
 
